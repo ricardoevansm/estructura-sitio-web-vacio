@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Titulo</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
     <header>
@@ -11,10 +12,19 @@
         <h3>Unidad Guasave</h3>
     </header>
     <main>
-        <figure>
-            <img src="#" alt="text alt" width="960" height="320">
-            <legend>texto de la imagen</legend>
-        </figure>
+        <form action="#"> 
+            <label for="">Usuario</label>
+            <input type="text" name="txtUsuario" id="txtUsuario">
+            <label for="">Contraseña</label>
+            <input type="password" name="txtPass" id="txtPass">
+            <label>
+                <input type="checkbox" name="remember" id="remember">
+                Mantener La Sesión Iniciada
+            </label>
+            <button type="submit">Iniciar Sesión</button>
+            <a href="lost.html"> Olvidé Mi Contraseña</a>
+
+        </form>
     </main>
     <footer>
         <hr>

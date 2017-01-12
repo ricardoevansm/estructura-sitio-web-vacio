@@ -1,1 +1,14 @@
-/*agregar codigo*/
+/*reglas CSS*/
+/*tipo etiqueta*/
+body,h1,h2,h3,h4,h5,h6
+{
+    margin:0;
+    padding:0;
+    border:0;
+
+}
+/*tipo ID*/
+#encabezado
+{
+background-color: #93485E;
+}
