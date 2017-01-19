@@ -7,26 +7,31 @@
 
 </head>
 <body>
-    <header>
+    <header id="encabezado">
         <h1>Universidad de Occidente</h1>
         <h3>Unidad Guasave</h3>
     </header>
-    <main>
+    <main id="contenido">
+        <div id="login-form">
         <form action="#"> 
-            <label for="">Usuario</label>
-            <input type="text" name="txtUsuario" id="txtUsuario">
-            <label for="">Contraseña</label>
-            <input type="password" name="txtPass" id="txtPass">
-            <label>
-                <input type="checkbox" name="remember" id="remember">
-                Mantener La Sesión Iniciada
+            <div class="control">
+                <label for="txtUsuario" class="negrita">Usuario</label><br>
+                <input type="text" name="txtUsuario" id="txtUsuario" class="input">
+            </div>
+            <div class="control">
+                <label for="txtPass" class="negrita">Contraseña</label><br>
+                <input type="password" name="txtPass" id="txtPass">
+            </div>
+            <label class="block">
+                <input type="checkbox" name="remember" id="remember">Mantener La Sesión Iniciada
             </label>
-            <button type="submit">Iniciar Sesión</button>
-            <a href="lost.html"> Olvidé Mi Contraseña</a>
-
+            <button onclick="login()">Iniciar Sesión</button>
+            <!--<button type="submit">Iniciar Sesión</button>-->
         </form>
+        <a href="lost.html" class="text-center block"> Olvidé Mi Contraseña</a>
+         </div>        
     </main>
-    <footer>
+    <footer id="pie">
         <hr>
         <p>Toodos los derechos reservados &copy; 2017</p>
     </footer>

@@ -1,1 +1,2 @@
-// TODO agg codigo javascript
+// alert("Hello World!");
+console.log("Hola desde la consola de JS");

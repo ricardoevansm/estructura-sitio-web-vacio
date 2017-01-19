@@ -2,13 +2,76 @@
 /*tipo etiqueta*/
 body,h1,h2,h3,h4,h5,h6
 {
-    margin:0;
-    padding:0;
-    border:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 
 }
+body
+ {
+     background-color: #ebecdf;
+ }
 /*tipo ID*/
 #encabezado
 {
-background-color: #93485E;
+    background-color: #93485E;
+    padding: 10px;
+    color:#000;
+}
+#login-form
+{
+    width: 370px;
+    margin: 20px auto;
+    padding: 15px;
+
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px lightgray;
+}
+#loggin-form .input
+{
+    width: 98%;
+    font-size: 1em;
+}
+#login-form .control
+{
+    margin-bottom: 20px;
+}
+#login-form .control label
+{
+    font-size: 1.2em;
+}
+#login-form button
+{
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* tipo clase*/
+.negrita 
+{
+    font-weight: bold;
+}
+.block
+{
+    display: block;
+}
+.inline-block
+{
+    display: inline-block;
+}
+.control input
+{
+    padding: 3px;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+.text-center
+{
+    text-align: center;
 }
