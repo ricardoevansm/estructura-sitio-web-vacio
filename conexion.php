@@ -14,10 +14,11 @@ class Conexion extends mysqli {
             'database_passwd'=>'toor',
             'database_port'=>'3306'
         );
-        $this->conectar();
+       parent::__construct( $this->database_host, $this->database_user, $this->database_passwd, $this->database_name, 
+                    $this->database_port);
     }
 
-     public function __construct1($host, $name, $user, $passwd, $port) {
+     public function __construct1($host,$user,$passwd,$name,$port) {
         $this->datos = array(
             'database_host'=>$host, 
             'database_name'=>$name, 
@@ -25,17 +26,7 @@ class Conexion extends mysqli {
             'database_passwd'=>$passwd,
             'database_port'=>$port
         );
-        $this->conectar();
-    }
-
-    public function conectar() {
-    $this->connect( $this->database_host,
-                    $this->database_user, 
-                    $this->database_passwd,
-                    $this->database_name, 
-                    $this->database_port);
-    
-        
+        parent::__construct1($host,$user,$passwd,$name,$port);
     }
 
     public function __get($keyname) {
