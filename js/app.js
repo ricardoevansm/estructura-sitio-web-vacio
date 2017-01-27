@@ -1,9 +1,19 @@
-// alert("Hello World!");
-console.log("Hola desde la consola de JS");
 
 function login()
 {
-    var usuario = document.getElementById("txtUsuario").value;
-    var pass = document.getElementById("txtPass").value;
-    alert("Usuario: " + usuario + ", Contraseña: " +pass);
+    $.post("../login.php", {txtUsuario:usuario, txtPass:passwd}, function(data)
+    {
+        return data;
+    });
+    
 }
+$(document).ready(function()
+{
+$('#login-button').click(function(event)
+{
+    var usuario = $('#txtUsuario').val();
+    var pass = $('#txtPass').val();
+    login(usuario,passwd);
+    event.preventDefault();
+});
+});
