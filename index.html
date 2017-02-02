@@ -14,13 +14,17 @@
     <main id="contenido">
         <div id="login-form">
         <form> 
+            <div id="login-form-msg" class="error oculto"></div>
             <div class="control">
                 <label for="txtUsuario" class="negrita">Usuario</label><br>
-                <input type="text" name="txtUsuario" id="txtUsuario" class="input">
+                <input type="text" name="txtUsuario" id="txtUsuario" class="input" required>
+
+                <div class="error oculto"> Este Campo es Obligatorio</div>
             </div>
             <div class="control">
                 <label for="txtPass" class="negrita">Contraseña</label><br>
-                <input type="password" name="txtPass" id="txtPass">
+                <input type="password" name="txtPass" id="txtPass" required> 
+                <div class="error oculto"> Este Campo es Obligatorio</div>
             </div>
             <label class="block">
                 <input type="checkbox" name="remember" id="remember">Mantener La Sesión Iniciada
@@ -33,7 +37,7 @@
     </main>
     <footer id="pie">
         <hr>
-        <p>Toodos los derechos reservados &copy; 2017</p>
+        <p>Toodos los derechos reservados &copy;<span class="negrita"> 2017</span></p>
     </footer>
     <!--main>figure>img[src="#" alt="text alt" width=960 height=320]+legend{texto de la imagen}-->
     <!--header>h1{Universidad de OCcidente}+h3{Unidad Guasave}-->

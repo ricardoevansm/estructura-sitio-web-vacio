@@ -29,6 +29,26 @@ body
     border-radius: 5px;
     box-shadow: 0 0 10px lightgray;
 }
+
+#profile-form
+{
+    width: 370px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.form 
+{
+     background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px lightgray;
+}
+#profile-form *
+{
+    display: block;
+    width: 100%;
+}
 #loggin-form .input
 {
     width: 98%;
@@ -74,4 +94,14 @@ body
 .text-center
 {
     text-align: center;
+}
+.error {
+    color: red;
+    background-color: #ffcccc;
+    border: 1px solid #ff8080;
+    border-radius: 3px;
+    padding: 5px;
+}
+.oculto {
+    display: none;
 }
